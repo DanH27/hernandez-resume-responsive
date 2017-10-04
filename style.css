@@ -1,11 +1,18 @@
 * {
     box-sizing: border-box;
 }
+
 .container {
 	max-width: 960px;
 	margin: 0 auto;
+  background-color: #e8ebef;
 }
-
+.resume-header {
+  border-bottom: 2px solid black;
+}
+h2 {
+  text-align: center;
+}
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -17,12 +24,16 @@
 .col-9 {width: 75%;}
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
-
+.col-m-12 {width: 100%;}
+section {
+  border-bottom: 3px solid black;
+  padding: 50px;
+}
 
 [class*="col-"] {
     float: left;
     padding: 15px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 .row::after {
     content: "";
@@ -37,7 +48,7 @@
 	list-style: none;
 	text-align: center;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 780px) {
 	.col-12 {width: 100%;}
-    
+
 }
